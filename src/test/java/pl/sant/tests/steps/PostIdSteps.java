@@ -11,7 +11,7 @@ import java.util.Map;
 
 
 public class PostIdSteps {
-    private static final Logger log = LogManager.getLogger("IdSteps");
+    private static final Logger log = LogManager.getLogger("PostIdSteps");
 
     private final String USER_ID_GET = "https://jsonplaceholder.typicode.com/comments";
     private Response response;

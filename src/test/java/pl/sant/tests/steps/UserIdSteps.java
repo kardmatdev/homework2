@@ -30,9 +30,7 @@ public class UserIdSteps {
 
     @Step
     public void setUserIdMaxValue() {
-        log.info(response.body().toString());
         List<Integer> listaJson = response.jsonPath().getList("userId");
-        log.info(listaJson.size());
         Integer maxValue = Collections.max(listaJson);
         log.info(maxValue);
         this.userIdMaxValue = maxValue;
